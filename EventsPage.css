@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+.carousel {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 32rem;
+}
+
+#shopeecontainer {
+    padding-top: 4rem;
+}
+#header {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 3.5rem;
+}
+
+#maincontainer {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+#shopeetext {
+    padding-right: 4rem;
+}
+
+#registxt {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+#regiscontainer {
+    padding: 0rem 30% 4rem 30%;
+}
+
+#gojektext {
+    padding-left: 4rem;
+}
+
+#phoneHelp, #emailHelp {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: small;
+    font-weight: 300;
+}
+
+#checkbox {
+    font-size: medium;
+    font-weight: 300;
+}
+
+.error-msg {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: small;
+    color: red;
+}
+
+.error {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+    border: 1px solid red;
+    outline: none;
+  }
+  
+  @keyframes shake {
+    0% {
+      left: -5px;
+    }
+    100% {
+      right: -5px;
+    }
+  }
+
+
+  @media only screen and (max-width:780px){ 
+    #checkbox {
+        font-size: small;
+    }
+
+    .error-msg {
+        font-size: x-small;
+        color: red;
+    }
+
+    #phoneHelp, #emailHelp {
+        font-size: x-small;
+    }
+
+    #regismaintext {
+        font-size: 1.8rem;
+    }
+    #shopee {
+        padding-top: 1rem;
+    }
+
+  }
+
+  @media only screen and (max-width:595px){ 
+    #checkbox {
+        font-size: small;
+    }
+
+    .error-msg {
+        font-size: x-small;
+        color: red;
+    }
+
+    .form-label {
+        font-size: small !important;
+    }
+    #phoneHelp, #emailHelp {
+        font-size: x-small;
+    }
+
+    #regismaintext {
+        font-size: 1.2rem;
+    }
+    #shopee {
+        padding-top: 1rem;
+    }
+
+  }

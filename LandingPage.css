@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+#maintxt {
+     padding-left: 1rem;
+    font-size: 4rem;
+}
+
+#tagline {
+    font-weight: 300;
+}
+
+.image_container {
+    position: fixed;
+    margin-top: 30rem;
+    z-index: 2;
+}
+
+#shopee {
+    padding-bottom: 0.8rem;
+}
+
+#minitext {
+    font-weight: 300;
+}
+
+#mainbg {
+    height: 100vh;
+}
+
+#textcontainer {
+    margin-bottom: 3rem;
+    position: fixed;
+    z-index: 2;
+}
+
+#tsparticles {
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+}
+
+#mainlogo {
+    width: 90px !important;
+    height: 72px !important;
+}
+
+@media screen and (max-width:740px){
+    #maintxt {
+        font-size: 3rem;
+    }
+    #mainline {
+        font-size: 1rem;
+    }
+    #tagline {
+        font-size: 1rem;
+    }
+    #mainlogo {
+        margin-top: 0.6rem;
+        width: 60px !important;
+        height: 48px !important;
+    }
+    #shopee {
+        padding-top: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:575px){
+    #maintxt {
+        font-size: 2rem;
+    }
+    #mainline {
+        font-size: 0.8rem;
+    }
+    #tagline {
+        font-size: 0.8rem;
+    }
+    #mainlogo {
+        margin-top: 1rem;
+        width: 30px !important;
+        height: 24px !important;
+    }
+    #shopee {
+        padding-top: 1rem;
+    }
+}

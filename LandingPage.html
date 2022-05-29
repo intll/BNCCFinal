@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="LandingPage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Welcome to PuddingFest!</title>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="LandingPage.html">PuddingFest
+        <img src="SRC/Logo.png" width="30" height="24" class="d-inline-block align-text-top" alt="Logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="LandingPage.html">What is PuddingFest?</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="EventsPage.html#maincontainer">
+                  <\Code> by Gojek
+                </a></li>
+              <li><a class="dropdown-item" href="EventsPage.html#shopeecontainer">INSIGHT by Shopee</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="EventsPage.html#regiscontainer">Registration Form</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <a class="btn btn-primary" href="ContactPage.html" role="button">Contact Us</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <div id="tsparticles"></div>
+    <div id="mainbg">
+      <div class="container d-flex align-items-center justify-content-center text-center h-100" id="maincontainer">
+        <div class="text-dark" id="textcontainer">
+          <h1 class="mb-3" id="maintxt">PuddingFest <img src="SRC/Logo.png" id="mainlogo"
+              class="d-inline-block align-text-center mb-3" alt="Logo.png"></h1>
+          <h5 class="mb-0" id="mainline">PuddingFest is a yearly event hosted by famous tech companies in Indonesia.</h5>
+          <h5 class="mb-4" id="tagline">Don't miss your chance to listen to world-class seminars to upgrade your skills.
+          </h5>
+          <a class="btn btn-outline-dark shadow-sm btn-lg m-2" href="EventsPage.html"
+            role="button">View Events</a>
+          <a class="btn btn-outline-primary shadow-sm btn-lg m-2" href="EventsPage.html#regiscontainer"
+            role="button">Register Now</a>
+        </div>
+        <div class="image_container">
+          <h6 id="minitext">Partners:</h6>
+          <a href="https://www.gojek.com/id-id/"><img src="SRC/Gojek.png" width="90" height="auto"
+              class="d-inline-block align-text-center mb-3" id="gojek" alt=""></a>
+          <a href="https://shopee.co.id/"><img src="SRC/Shopee.png" width="90" height="auto"
+              class="d-inline-block align-text-center mb-3" id="shopee" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+  <script>
+    const particles = {
+      "fpsLimit": 120,
+      "particles": {
+        "number": {
+          "value": 40,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#D3D3D3",
+          "animation": {
+            "enable": true,
+            "speed": 10,
+            "sync": true
+          }
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+        },
+        "opacity": {
+          "value": 0.8,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "links": {
+          "enable": true,
+          "distance": 300,
+          "color": "#D3D3D3",
+          "opacity": 0.5,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 0.3,
+          "direction": "none",
+          "random": false,
+          "straight": true,
+          "out_mode": "out",
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "connect"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 0.8
+          },
+          "repulse": {
+            "distance": 75
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true,
+      "background": {
+        "color": "#ffffff",
+        "image": "",
+        "position": "50% 50%",
+        "repeat": "no-repeat",
+        "size": "cover"
+      }
+    };
+
+    tsParticles.load("tsparticles", particles);
+  </script>
+
+</body>
+
+</html>
